@@ -86,7 +86,23 @@
             responsive: true
         }
     });
-
+// Worldwide Sales Chart3
+    var ctx1 = $("#worldwide-sales1").get(0).getContext("2d");
+    var myChart1 = new Chart(ctx1, {
+        type: "bar",
+        data: {
+            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+            datasets: [{
+                label: "ยอดรวม",
+                data: [3000000, 2500000, 1800000, 1200000, 2900000, 2300000, 1000000, 1200000, 2900000, 2300000],
+                backgroundColor: "rgba(235, 22, 22, .7)"
+            },
+            ]
+        },
+        options: {
+            responsive: true
+        }
+    });
 
     // Salse & Revenue Chart
     var ctx2 = $("#salse-revenue").get(0).getContext("2d");
