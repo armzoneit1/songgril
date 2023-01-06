@@ -83,7 +83,15 @@
             ]
             },
         options: {
-            responsive: true
+
+            scales: {
+                x: {
+                    border: {
+                        color:   'green'
+                    }
+                }
+            },
+            responsive: true,
         }
     });
 // Worldwide Sales Chart3
@@ -101,6 +109,7 @@
         },
         options: {
             responsive: true
+
         }
     });
 
